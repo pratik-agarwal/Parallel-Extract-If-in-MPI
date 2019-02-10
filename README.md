@@ -1,7 +1,7 @@
 # Problem
 
 Your task in this assignment is to implement and benchmark efficient parallel MPI function mpi_extract_if . The function works as follows: 
-Given a sequence of some objects of type T , and a predicate that returns true if object satisfies some condition, the function creates sequence Y with a copy of only thes objects in X for which the predicate is true. The order in which elements in Y appear can be arbitrary (as long as all objects that should be copied are copied however, Y should be evenly distributed between all processors. The input sequence has length n * p , and is evenly distributed between p processors (eac processor stores n elements). The type T is so called Plain Old Data (POD), and hence object of type T can be treated as an array of bytes. The inpu sequence is too large to aggregate it within main memory of a single processor. For example, it is realistic to expect that n=32000000000.
+Given a sequence of some objects of type T , and a predicate that returns true if object satisfies some condition, the function creates sequence Y with a copy of only thes objects in X for which the predicate is true. The order in which elements in Y appear can be arbitrary (as long as all objects that should be copied are copied however, Y should be evenly distributed between all processors. The input sequence has length n * p , and is evenly distributed between p processors (eac processor stores n elements). The type T is so called Plain Old Data (POD), and hence object of type T can be treated as an array of bytes. The input sequence is too large to aggregate it within main memory of a single processor. For example, it is realistic to expect that n=32000000000.
 
 
 ### Instructions:
