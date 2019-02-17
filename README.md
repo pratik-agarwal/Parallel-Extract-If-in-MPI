@@ -14,4 +14,4 @@ Arguments of the mpi_extract_if are as follows:
 4. in vector storing n objects that are part of the input sequence.
 5. out empty vector to store part of the output sequence.
 
-When implementing mpi_extract_if you may assume that all arguments are correct, and there is no need to test for that. Moreover, you can assume tha mpi_extract_if is invoked with a correct communicator containing at least two ranks. Finally, the project backbone provides a simple Makefile . Yo can edit it as needed for your project. However, when invoked without arguments, Makefile must produce executable a1 from a1.cpp . 
+When implementing mpi_extract_if you may assume that all arguments are correct, and there is no need to test for that. Moreover, you can assume tha mpi_extract_if is invoked with a correct communicator containing at least two ranks. Finally, the project backbone provides a simple Makefile . When invoked without arguments, Makefile must produce executable a1 from a1.cpp . 
